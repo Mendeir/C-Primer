@@ -34,7 +34,7 @@ Note: Answers to non-programming exercises will be listed here.
              << " is " << v1 + v2 << std::endl;
 ```
 > If the program is legal, what does it do? If the program is not legal, why
-not? How would you fix it?
+not? How would you fix it?  
   
 > **Answer:** The following program is legal as the first line of code ends with the semicolon in which indicates the end of a command thus next line of code will be 
   incomplete  due to there is no output stream before the output operator<< and the line that follows. Moreover, a workaround for this code can be to remove the semicolon and       only add it  after the *std::endl* expression.
@@ -46,20 +46,21 @@ not? How would you fix it?
 > Indicate which, if any, of the following output statements are
   legal:
 ```
-  std::cout << "/*";
-  std::cout << "*/";
-  std::cout << /* "*/" */;
-  std::cout << /* "*/" /* "/*" */;
+  (1)std::cout << "/*";
+  (2)std::cout << "*/";
+  (3)std::cout << /* "*/" */;
+  (4)std::cout << /* "*/" /* "/*" */;
 ```
 > After you’ve predicted what will happen, test your answers by compiling a
   program with each of these statements. Correct any errors you encounter.
     
-> **Answer:** In my opinion, the first 2 statements are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. To correct the program the double quotation marks must be moved after the output *operator<<* and end before the semicolon to avoid the code being commented out, thus making the program:
+> **Answer:** In my opinion, statements 1,2,4 are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. In the case of statement 4, the extra double quotation marks are being commented out which makes it legal. With these, statement 3 is illegal due to the first quotation mark being commented out making the code incomplete. This can be fixed by moving the quotation marks found inside the two delimiters to the end of the output operator<< or adding an additional double quotation mark before the semicolon making the correct code:
 ```
-  std::cout << "/*";
-  std::cout << "*/";
-  std::cout << "/* */ */";
-  std::cout << "/* */ /* /* */";
+  (3)std::cout << "/* */ */";
+```
+**or**
+```
+  (3)std::cout << /* "*/" */";
 ```
 
 ## Exercise 1.9: 
