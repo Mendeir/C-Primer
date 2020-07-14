@@ -35,6 +35,9 @@ Note: Answers to non-programming exercises will be listed here.
 ```
 > If the program is legal, what does it do? If the program is not legal, why
 not? How would you fix it?
+  
+> **Answer:** The following program is legal as the first line of code ends with the semicolon in which indicates the end of a command thus next line of code will be 
+  incomplete  due to there is no output stream before the output operator<< and the line that follows. Moreover, a workaround for this code can be to remove the semicolon and       only add it  after the *std::endl* expression.
 
 ## Exercise 1.7: 
 > Compile a program that has incorrectly nested comments.
@@ -50,6 +53,14 @@ not? How would you fix it?
 ```
 > After you’ve predicted what will happen, test your answers by compiling a
   program with each of these statements. Correct any errors you encounter.
+    
+> **Answer:** In my opinion, the first 2 statements are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. To correct the program the double quotation marks must be moved after the output *operator<<* and end before the semicolon to avoid the code being commented out, thus making the program:
+```
+  std::cout << "/*";
+  std::cout << "*/";
+  std::cout << "/* */ */";
+  std::cout << "/* */ /* /* */";
+```
 
 ## Exercise 1.9: 
 > Write a program that uses a while to sum the numbers from
