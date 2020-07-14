@@ -36,7 +36,8 @@ Note: Answers to non-programming exercises will be listed here.
 > If the program is legal, what does it do? If the program is not legal, why
 not? How would you fix it?  
   
-> **Answer:** The following program is legal as the first line of code ends with the semicolon in which indicates the end of a command thus next line of code will be 
+> ### Answer: 
+> The following program is legal as the first line of code ends with the semicolon in which indicates the end of a command thus next line of code will be 
   incomplete  due to there is no output stream before the output operator<< and the line that follows. Moreover, a workaround for this code can be to remove the semicolon and       only add it  after the *std::endl* expression.
 
 ## Exercise 1.7: 
@@ -54,7 +55,8 @@ not? How would you fix it?
 > After you’ve predicted what will happen, test your answers by compiling a
   program with each of these statements. Correct any errors you encounter.
     
-> **Answer:** In my opinion, statements 1,2,4 are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. In the case of statement 4, the extra double quotation marks are being commented out which makes it legal. With these, statement 3 is illegal due to the first quotation mark being commented out making the code incomplete. This can be fixed by moving the quotation marks found inside the two delimiters to the end of the output operator<< or adding an additional double quotation mark before the semicolon making the correct code:
+> ## Answer:
+> In my opinion, statements 1,2,4 are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. In the case of           statement 4, the extra double quotation marks are being commented out which makes it legal. With these, statement 3 is illegal due to the first quotation mark being commented   out making the code incomplete. This can be fixed by moving the quotation marks found inside the two delimiters to the end of the output operator<< or adding an additional       double quotation mark before the semicolon making the correct code:
 ```
   (3)std::cout << "/* */ */";
 ```
