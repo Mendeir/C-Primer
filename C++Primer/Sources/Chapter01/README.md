@@ -3,8 +3,10 @@ Note: Answers to non-programming exercises will be listed here.
 
 ## Exercise 1.1: 
 > Review the documentation for your compiler and determine
-  what file naming convention it uses. Compile and run the main program from  
-  page 2.
+  what file naming convention it uses. Compile and run the main program 
+  from page 2.  
+  
+[Exercise 1.1.cpp](1.1.cpp)
 
 ## Exercise 1.2:
 > Change the program to return -1. A return value of -1 is
