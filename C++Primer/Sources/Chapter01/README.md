@@ -122,9 +122,9 @@ but different signs which makes them 0.
 ## Exercise 1.13:
 > Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
 
-[Exercise 1.13.1.cpp](1.13.1cpp)   
-[Exercise 1.13.2.cpp](1.13.2cpp)  
-[Exercise 1.13.3.cpp](1.13.3cpp)  
+[Exercise 1.13.1.cpp](1.13.1.cpp)   
+[Exercise 1.13.2.cpp](1.13.2.cpp)  
+[Exercise 1.13.3.cpp](1.13.3.cpp)  
 
 ## Exercise 1.14: 
 > Compare and contrast the loops that used a for with those
