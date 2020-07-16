@@ -1,14 +1,25 @@
+/*
+
+Exercise Description:
+Exercise 1.22: Write a program that reads several transactions for the same
+ISBN. Write the sum of all the transactions that were read.
+
+*/
+
+class test{
+
+};
+
 #include <iostream>
 #include "Sales_item.h"
 int main ()
 {
-	Sales_item book;
-	Sales_item bookSum;
-	while (std::cin >> book)
-	{
-		bookSum = bookSum + book;
-	}
+	Sales_item booksInput, bookSum;
 
-	std::cout << bookSum << std::endl;
+	while (std::cin >> booksInput)
+		bookSum += booksInput;
+
+	std::cout << bookSum;
+
 	return 0;
 }
