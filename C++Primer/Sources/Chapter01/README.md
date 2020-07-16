@@ -38,8 +38,10 @@ not? How would you fix it?
 
 <p>&nbsp;</p>
 
-> **Answer:** The following program is legal as the first line of code ends with the semicolon in which indicates the end of a command thus next line of code will be 
-  incomplete due to there is no output stream before the output operator<< and the line that follows. Moreover, a workaround for this code can be to remove the semicolon and       only add it  after the *std::endl* expression.
+> **Answer:** The following program is legal as the first line of code ends with the semicolon in which
+  indicates the end of a command thus next line of code will be incomplete due to there is no output stream
+  before the output operator<< and the line that follows. Moreover, a workaround for this code can be to remove
+  the semicolon and only add it  after the *std::endl* expression.
 
 ## Exercise 1.7: 
 > Compile a program that has incorrectly nested comments.
@@ -58,7 +60,11 @@ not? How would you fix it?
 
 <p>&nbsp;</p>
 
-> **Answer:** In my opinion, statements 1,2,4 are the only legal ones as they are enclosed in double quotation marks which indicates that they are a *string literal*. In the case of statement 4, the extra double quotation marks are being commented out which makes it legal. With these, statement 3 is illegal due to the first quotation mark being commented out making the code incomplete. This can be fixed by moving the quotation marks found inside the two delimiters to the end of the output operator<< or adding an additional double quotation mark before the semicolon making the correct code:
+> **Answer:** In my opinion, statements 1,2,4 are the only legal ones as they are enclosed in double quotation marks
+  which indicates that they are a *string literal*. In the case of statement 4, the extra double quotation marks are
+  being commented out which makes it legal. With these, statement 3 is illegal due to the first quotation mark being
+  commented out making the code incomplete. This can be fixed by moving the quotation marks found inside the two delimiters
+  to the end of the output operator<< or adding an additional double quotation mark before the semicolon making the correct code:
 ```
   (3)std::cout << "/* */ */";
 ```
@@ -91,7 +97,10 @@ of sum?
 
 <p>&nbsp;</p>
 
-> **Answer:** The following for loop initializes int of i into -100 with a condition that will be true if i is less than or equal to 100 which will be incremented every run of the loop. In its body, it will add the i continously starting from -100 to 100 which will make the final value of the sum to be 0 since the sum from -100 to 0 and to 0 to 100 will be the same but different signs which makes them 0.
+> **Answer:** The following for loop initializes int of i into -100 with a condition that will be true if i is less than
+or equal to 100 which will be incremented every run of the loop. In its body, it will add the i continously starting from
+-100 to 100 which will make the final value of the sum to be 0 since the sum from -100 to 0 and to 0 to 100 will be the same
+but different signs which makes them 0.
 
 
 ## Exercise 1.13:
@@ -104,7 +113,12 @@ of sum?
 
 <p>&nbsp;</p>
 
-> **Answer:** *For loop* and *while loop* are both used in controlling the flow of the program with the *for loop* you are able to initialize, set a condition, and an expression all in one place while the *while loop* is different from the other hand, in which you initialize the varaible before the loop and then set a condition statement in which you increment it in the *while loop* body. The advantage of *for loop* over the *while loop* is that it makes the code readable. While the advantage *while loop* over the *for loop* is that it handles better when you don't know the number of iterations/inputs needed in advance.
+> **Answer:** *For loop* and *while loop* are both used in controlling the flow of the program with the *for loop* you
+are able to initialize, set a condition, and an expression all in one place while the *while loop* is different from
+the other hand, in which you initialize the varaible before the loop and then set a condition statement in which you
+increment it in the *while loop* body. The advantage of *for loop* over the *while loop* is that it makes the code readable.
+While the advantage *while loop* over the *for loop* is that it handles better when you don't know the number of
+iterations/inputs needed in advance.
 
 
 ## Exercise 1.15:
@@ -126,8 +140,8 @@ of sum?
   repeated.
 
 ## Exercise 1.19: 
-> Revise the program you wrote for the exercises in § 1.4.1 (p.
-  13) that printed a range of numbers so that it handles input in which the first
+> Revise the program you wrote for the exercises in § 1.4.1 (p.13) that 
+  printed a range of numbers so that it handles input in which the first
   number is smaller than the second
 
 ## Exercise 1.20: 
