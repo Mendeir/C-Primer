@@ -13,26 +13,26 @@ Note: Answers to non-programming exercises will be listed here.
   often treated as an indicator that the program failed. Recompile and rerun
   your program to see how your system treats a failure indicator from main.
 
-[Exercise 1.2.cpp](1.02.cpp)
+[Exercise 1.02.cpp](1.02.cpp)
 
 ## Exercise 1.3:
 > Write a program to print Hello, World on the standard
   output.
 
-[Exercise 1.3.cpp](1.03.cpp)
+[Exercise 1.03.cpp](1.03.cpp)
 
 ## Exercise 1.4: 
 > Our program used the addition operator, +, to add two
   numbers. Write a program that uses the multiplication operator, *, to print
   the product instead.
 
-[Exercise 1.4.cpp](1.04.cpp)
+[Exercise 1.04.cpp](1.04.cpp)
 
 ## Exercise 1.5:
 > We wrote the output in one large statement. Rewrite the
   program to use a separate statement to print each operand.
 
-[Exercise 1.5.cpp](1.05.cpp)
+[Exercise 1.05.cpp](1.05.cpp)
 
 ## Exercise 1.6:
 > Explain whether the following program fragment is legal.
@@ -54,7 +54,7 @@ not? How would you fix it?
 ## Exercise 1.7: 
 > Compile a program that has incorrectly nested comments.
 
-[Exercise 1.7.cpp](1.07.cpp)
+[Exercise 1.07.cpp](1.07.cpp)
 
 ## Exercise 1.8: 
 > Indicate which, if any, of the following output statements are
@@ -87,7 +87,7 @@ not? How would you fix it?
 > Write a program that uses a while to sum the numbers from
   50 to 100.
 
-[Exercise 1.9.cpp](1.09.cpp)
+[Exercise 1.09.cpp](1.09.cpp)
 
 ## Exercise 1.10: 
 > In addition to the ++ operator that adds 1 to its operand,
