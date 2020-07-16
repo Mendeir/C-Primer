@@ -89,6 +89,10 @@ of sum?
     sum += i;
 ```
 
+<p>&nbsp;</p>
+
+> **Answer:** The following for loop initializes int of i into -100 with a condition that will be true if i is less than or equal to 100 which will be incremented every run of the loop. In its body, it will add the i continously starting from -100 to 100 which will make the final value of the sum to be 0 since the sum from -100 to 0 and to 0 to 100 will be the same but different signs which makes them 0.
+
 ## Exercise 1.13:
 > Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
 
