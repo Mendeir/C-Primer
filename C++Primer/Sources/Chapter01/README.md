@@ -157,6 +157,11 @@ iterations/inputs needed in advance.
 > What happens in the program presented in this section if the
   input values are all equal? What if there are no duplicated values?
 
+<p>&nbsp</p>
+
+> **Answer:** Based on the code given, if all the input values are equal, then the program will continue to get input
+from the user continously until it detects another statement or end-of-file key.
+
 ## Exercise 1.18: 
 > Compile and run the program from this section giving it only
   equal values as input. Run it again giving it values in which no number is
