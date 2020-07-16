@@ -207,7 +207,7 @@ See [Exercise 1.13.3cpp](1.13.3.cpp) or [Exercise 1.11.cpp](1.11.cpp)
   representing multiple ISBNs. The records for each ISBN should be grouped
   together.
 
-[Exercise 1.24.cpp](1.24.cpp)
+[Exercise 1.23.cpp](1.23.cpp)
 
 ## Exercise 1.25:
 > Using the Sales_item.h header from the Web site,
