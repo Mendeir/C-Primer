@@ -122,9 +122,9 @@ but different signs which makes them 0.
 ## Exercise 1.13:
 > Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
 
-[Exercise 1.13.1cpp](1.13.1cpp)   
-[Exercise 1.13.2cpp](1.13.2cpp)  
-[Exercise 1.13.3cpp](1.13.3cpp)  
+[Exercise 1.13.1.cpp](1.13.1cpp)   
+[Exercise 1.13.2.cpp](1.13.2cpp)  
+[Exercise 1.13.3.cpp](1.13.3cpp)  
 
 ## Exercise 1.14: 
 > Compare and contrast the loops that used a for with those
@@ -174,7 +174,7 @@ from the user continously until it detects another statement or end-of-file key.
   printed a range of numbers so that it handles input in which the first
   number is smaller than the second
 
-[Exercise 1.19.cpp](1.19.cpp)
+See [Exercise 1.13.3cpp](1.13.3.cpp) or [Exercise 1.11.cpp](1.11.cpp)
 
 ## Exercise 1.20: 
 > http://www.informit.com/title/032174113 contains a copy of
