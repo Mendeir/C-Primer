@@ -25,7 +25,5 @@ precise results than float.
 > To calculate a mortgage payment, what types would you use
   for the rate, principal, and payment? Explain why you selected each type.
 
-<p> &nbsp </p> 
-
 **Answer:** In calculating the mortgage payment, I would use **double** for all since 
 those requires floating-point computations and will provide more precise results than float.
