@@ -44,9 +44,11 @@ those requires floating-point computations and will provide more precise results
 ```
 
 **Answer:**  
-	(1) 42 - 10 = 32  
+	(1) 42 - 10 = 32
+	<pre>
 	(2) 10 - 42 = -32 *since the data type is unsigned, -32 will be converted to unsigned*  
 	    = 2^32 - 32 = 4294967264  
+	</pre>
 	(3) 42 - 10 = 32  
 	(4) 10 - 42 = -32  
 	(5) 10 - 10 = 0  
