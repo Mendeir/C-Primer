@@ -14,11 +14,11 @@ Note: Answers to non-programming exercises will be listed here.
 **int** will be at least as large as **short**, a **long** at
 least as large as an **int**, and **long long** at least as large as **long**. 
 
-<br> (2) <br> 
+(2) <br> 
 **unsigned type** holds number greater than or equal to zero while **signed type** holds
 positive, negative, and zero numbers.
 
-<br> (3) <br>
+(3) <br>
 **floats** are represented in one *word* and holds 7 significant digits
 while **doubles** are represented in *two words* and holds 10 significant digits which provides more
 precise results than float.
