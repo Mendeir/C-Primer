@@ -43,12 +43,19 @@ those requires floating-point computations and will provide more precise results
 	(6)std::cout << u - i << std::endl;
 ```
 
-**Answer:** 
-	(1) 42 - 10 = 32
-	(2) 10 - 42 = -32 *since the data type is unsigned, -32 will be converted to unsigned*
-	= 2^32 - 32 = 4294967264
+**Answer:**  
+	(1) 42 - 10 = 32  
+	(2) 10 - 42 = -32 *since the data type is unsigned, -32 will be converted to unsigned*  
+	= 2^32 - 32 = 4294967264  
+	(3) 42 - 10 = 32  
+	(4) 10 - 42 = -32  
+	(5) 10 - 10 = 0  
+	(6) 10 - 10 = 0  
 
-	(3) 42 - 10 = 32
-	(4) 10 - 42 = -32
-	(5) 10 - 10 = 0
-	(6) 10 - 10 = 0
+## Exercise 2.4: 
+> Write a program to check whether your predictions were
+  correct. If not, study this section until you understand what the problem is
+
+[Exercise 2.04.cpp](2.04.cpp)
+
+
