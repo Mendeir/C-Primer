@@ -66,8 +66,8 @@ those requires floating-point computations and will provide more precise results
 	(c) 3.14, 3.14f, 3.14L
 	(d) 10, 10u, 10., 10e-2
 
-**Answer:** 
-	(a) 
+**Answer:**   
+	(a)  
 	> 'a'  = char  
 	  L'a' = wchar_t  
 	  "a"  = const char [2]  
@@ -78,13 +78,13 @@ those requires floating-point computations and will provide more precise results
 	A *const char* is a string literal in which a compiler appends a null character ('\0') on each one.
 	A *const wchar_t* same as wchar_t but as a string literal.
 
-	(b)
-	> 10   = int
-	  10u  = unsigned int
-	  10L  = long int
-	  10uL = unsigned long
-	  012  = octadecimal int
-	  0xC  = hexadecimal int
+	(b)  
+	> 10   = int  
+	  10u  = unsigned int  
+	  10L  = long int  
+	  10uL = unsigned long  
+	  012  = octadecimal int  
+	  0xC  = hexadecimal int  
 
 	An *int* represents integer values.
 	An *unsigned int* represents integer values equal or higher than zero.
