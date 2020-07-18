@@ -125,7 +125,7 @@ int month = 9, day = 7;
 int month = 09, day = 07;
 ```
 
-**Answer:** first line of code initializes as an integer. Second line of code intializes as an octadecimal
+**Answer:** First line of code initializes as an integer. Second line of code intializes as an octadecimal
 
 ## Exercise 2.7:
 > What values do these literals represent? What type does each have?
@@ -133,3 +133,11 @@ int month = 09, day = 07;
 	(b) 3.14e1L
 	(c) 1024f
 	(d) 3.14L
+
+**Answer:** 
+```c++
+(a) "Who goes with Fergus?" = String literal
+(b) 3.14e1L                 = Long double
+(c) 1024f                   = N/a since 1024 is not a floating-point number
+(d) 3.14L                   = Long double
+```
