@@ -6,7 +6,7 @@ Note: Answers to non-programming exercises will be listed here.
   and short? Between an unsigned and a signed type? Between a float and
   a double?
 
-**Answer:**
+**Answer:**  
 (1) <br> 
 **int** will be at least as large as **short**, a **long** at
 least as large as an **int**, and **long long** at least as large as **long**. 
@@ -29,7 +29,7 @@ those requires floating-point computations and will provide more precise results
 
 ## Exercise 2.3:
 > What output will the following code produce?
-```
+```c++
 	unsigned u = 10, u2 = 42;
 
 	(1)std::cout << u2 - u << std::endl;
@@ -43,10 +43,10 @@ those requires floating-point computations and will provide more precise results
 	(6)std::cout << u - i << std::endl;
 ```
 
-**Answer:**  
+**Answer:**    
 	(1) 42 - 10 = 32  
 	(2) 10 - 42 = -32 *since the data type is unsigned, -32 will be converted to unsigned*  
-	    = 2^32 - 32 = 4294967264  
+	     = 2^32 - 32 = 4294967264  
 	(3) 42 - 10 = 32  
 	(4) 10 - 42 = -32  
 	(5) 10 - 10 = 0  
@@ -67,12 +67,13 @@ those requires floating-point computations and will provide more precise results
 	(d) 10, 10u, 10., 10e-2
 
 **Answer:**   
-	(a)  
-	> 'a'  = char  
-	  L'a' = wchar_t  
-	  "a"  = const char [2]  
-	  L"a" = const wchar_t [2]  
-	
+(a)
+```c++  
+  'a'  = char  
+   L'a' = wchar_t  
+   "a"  = const char [2]  
+   L"a" = const wchar_t [2]  
+```	
 	A *char* has the same size as a single machine byte
 	A *wchar_t* has the size enought to hold any character in the machine's largest extend char set
 	A *const char* is a string literal in which a compiler appends a null character ('\0') on each one.
