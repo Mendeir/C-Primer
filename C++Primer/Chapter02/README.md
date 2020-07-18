@@ -75,10 +75,10 @@ L'a' = wchar_t
 L"a" = const wchar_t [2]  
 ```	
 
- A *char* has the same size as a single machine byte  
- A *wchar_t* has the size enought to hold any character in the machine's largest extend char set  
- A *const char* is a string literal in which a compiler appends a null character ('\0') on each one.  
- A *const wchar_t* same as wchar_t but as a string literal.  
+ A ***char*** has the same size as a single machine byte  
+ A ***wchar_t*** has the size enought to hold any character in the machine's largest extend char set  
+ A ***const char*** is a string literal in which a compiler appends a null character ('\0') on each one.  
+ A ***const wchar_t*** same as wchar_t but as a string literal.  
 
 **(b)**
 ```c++
@@ -89,12 +89,12 @@ L"a" = const wchar_t [2]
 012  = octadecimal int  
 0xC  = hexadecimal int  
 ```
-An *int* represents integer values.  
-An *unsigned int* represents integer values equal or higher than zero.  
-A *long int* represents long integer values that is as large as int.  
-An *unsigned long* represents unsigned long integer values that is large as int with values equal or higher than zero.  
-An *octadecimal int* represents octadecimals and begins with a 0.  
-A *hexadecimal int* represents hexadecimals and begins with 0x or 0X.  
+An ***int*** represents integer values.  
+An ***unsigned int*** represents integer values equal or higher than zero.  
+A ***long int*** represents long integer values that is as large as int.  
+An ***unsigned long*** represents unsigned long integer values that is large as int with values equal or higher than zero.  
+An ***octadecimal int*** represents octadecimals and begins with a 0.  
+A ***hexadecimal int*** represents hexadecimals and begins with 0x or 0X.  
 
 **(c)**
 ```c++
@@ -103,11 +103,11 @@ A *hexadecimal int* represents hexadecimals and begins with 0x or 0X.
 3.14L = long double
 ```
 
-A *double* holds 10 significant digits and represented in *two words.*  
-A *float* holds 6 significant digits and represented in *one word.*  
-A *long double* holds 10 significant digits and represented in *four words.*  
+A ***double*** holds 10 significant digits and represented in *two words.*  
+A ***float*** holds 6 significant digits and represented in *one word.*  
+A ***long double*** holds 10 significant digits and represented in *four words.*  
 
-(d)
+**(d)**
 ```c++
 10    = int 
 10u   = unsigned int
@@ -116,14 +116,16 @@ A *long double* holds 10 significant digits and represented in *four words.*
 ```
 An integer with a decimal point or an exponent specified using scientific notation
 automatically represents a floating-point literal. Default floating-point literals 
-have type *double*
+have type ***double.***
 
 ## Exercise 2.6: 
 > What, if any, are the differences between the following definitions:
-```
+```c++
 int month = 9, day = 7;
 int month = 09, day = 07;
 ```
+
+**Answer:** first line of code initializes as an integer. Second line of code intializes as an octadecimal
 
 ## Exercise 2.7:
 > What values do these literals represent? What type does each have?
