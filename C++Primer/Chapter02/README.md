@@ -161,7 +161,7 @@ explain what’s wrong and how to correct it.
 
 **Answer:** 
 ``` c++
-(a) std::cin >> int input_value;      //Illegal, since the variable is not initialized beforehand.
+(a) std::cin >> int input_value;     //Illegal, since the variable is not initialized beforehand.
 //Correct:
 	int input_value = 0;
 	std::cin >> input_value;
@@ -170,6 +170,10 @@ explain what’s wrong and how to correct it.
 //Correct:
 	double i = { 3.14 };
 
-(c) double salary = wage = 9999.99;  //Salary and wage will be equal to 9999.99
-(d) int i = 3.14;                    //i will be initialized to 3 since the given value is a floating-point the compiler will need to trunctuate the deccimal values.
+(c) double salary = wage = 9999.99;  //Illegal, since wage isn't initialized
+//Correct:
+	double wage { 0 };
+	double salary = wage = 9999.99;
+
+(d) int i = 3.14;                    //i will be initialized to 3 since the given value is a floating-point the compiler will need to trunctuate the decimal values.
 ```
