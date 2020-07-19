@@ -199,3 +199,34 @@ int global_int         = 0
 int local_int          = undefined value / garbage value
 std::string local_str  = empty string;
 ```
+
+## Exercise 2.11: 
+>Explain whether each of the following is a declaration or a
+definition:
+```c++
+(a) extern int ix = 1024;
+(b) int iy;
+(c) extern int iz;
+```
+
+**Answer:**  
+**(a)** Definition, since it allocates memory and gives it an initial value.  
+**(b)** Definition, since it allocates memory.  
+**(c)** Declaration, since an ***extern*** keyword is given. 
+
+## Exercise 2.12:
+> Which, if any, of the following names are invalid?
+```c++
+(a) int double = 3.14;
+(b) int _;
+(c) int catch-22;
+(d) int 1_or_2 = 1;
+(e) double Double = 3.14;
+```
+
+**Answer:**  
+**(a)** Invalid, since double is a reserved word.  
+**(b)** Valid, an identifier can start with _.  
+**(c)** Invalid, since "-" is not accepted in naming an identifier.  
+**(d)** Invalid, An identifier shouldn't start with a number.  
+**(e)** Valid, since a Double with a capital "D" is not a reserved keyword.
