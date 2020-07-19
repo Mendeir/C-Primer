@@ -141,3 +141,20 @@ int month = 09, day = 07;
 (c) 1024f                   = N/a since 1024 is not a floating-point number
 (d) 3.14L                   = Long double
 ```
+
+## Exercise 2.8:
+> Using escape sequences, write a program to print 2M followed
+by a newline. Modify the program to print 2, then a tab, then an M, followed
+by a newline
+
+[Exercise 2.8.cpp](2.08.cpp) 
+
+## Exercise 2.9:
+> Explain the following definitions. For those that are illegal,
+explain what’s wrong and how to correct it.
+```c++
+(a) std::cin >> int input_value;
+(b) int i = { 3.14 };
+(c) double salary = wage = 9999.99;
+(d) int i = 3.14;
+```
