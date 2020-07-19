@@ -158,3 +158,18 @@ explain what’s wrong and how to correct it.
 (c) double salary = wage = 9999.99;
 (d) int i = 3.14;
 ```
+
+**Answer:** 
+``` c++
+(a) std::cin >> int input_value;      //Illegal, since the variable is not initialized beforehand.
+//Correct:
+	int input_value = 0;
+	std::cin >> input_value;
+
+(b) int i = { 3.14 };                //Illegal, there will be loss of data due to intializing a floating-point value to a int in which the compiler will not allow due to the list initialization.
+//Correct:
+	double i = { 3.14 };
+
+(c) double salary = wage = 9999.99;  //Salary and wage will be equal to 9999.99
+(d) int i = 3.14;                    //i will be initialized to 3 since the given value is a floating-point the compiler will need to trunctuate the deccimal values.
+```
