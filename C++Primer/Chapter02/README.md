@@ -230,3 +230,34 @@ definition:
 **(c)** Invalid, since "-" is not accepted in naming an identifier.  
 **(d)** Invalid, An identifier shouldn't start with a number.  
 **(e)** Valid, since a Double with a capital "D" is not a reserved keyword.
+
+## Exercise 2.13:
+> What is the value of j in the following program?
+```c++
+int i = 42;
+
+int main()
+{
+	int i = 100;
+	int j = i;
+}
+```
+
+**Answer:** The value of j will be 100 since no scope operator is used, the 
+local variable inside the scope will be used.
+
+## Exercise 2.14: 
+> Is the following program legal? If so, what values are
+printed?
+
+```c++
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+sum += i;
+std::cout << i << " " << sum << std::endl;
+```
+
+**Answer:** The following program is legal and the value printed will be 100 and 45
+since the initialized variable **i** in the ***for loop*** will be destroyed 
+after the loop ends thus the **i** that will be used will be the one initialized
+earlier that has a value of 100. 
