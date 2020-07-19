@@ -177,3 +177,25 @@ explain what’s wrong and how to correct it.
 
 (d) int i = 3.14;                    //i will be initialized to 3 since the given value is a floating-point the compiler will need to trunctuate the decimal values.
 ```
+
+## Exercise 2.10: 
+>What are the initial values, if any, of each of the following
+variables?
+```c++
+std::string global_str;
+int global_int;
+
+int main()
+
+{
+	int local_int;
+	std::string local_str;
+}
+```
+**Answer:**
+```c++
+std::string global_str = empty string
+int global_int         = 0
+int local_int          = undefined value / garbage value
+std::string local_str  = empty string;
+```
