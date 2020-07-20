@@ -261,3 +261,44 @@ std::cout << i << " " << sum << std::endl;
 since the initialized variable **i** in the ***for loop*** will be destroyed 
 after the loop ends thus the **i** that will be used will be the one initialized
 earlier that has a value of 100. 
+
+## Exercise 2.15: 
+> Which of the following definitions, if any, are invalid? Why?
+```c++
+(a) int ival = 1.01;
+(b) int &rval1 = 1.01;
+(c) int &rval2 = ival;
+(d) int &rval3;
+```
+
+**Answer:**   
+(a) Valid, but data will be truncated.  
+(b) Invalid, references will only refer to an object.  
+(c) Valid, since ival is an integer.  
+(d) Invalid, references must be initialized  
+
+## Exercise 2.16:
+> Which, if any, of the following assignments are invalid? If they are valid, explain what they do.
+```c++
+int i = 0, &r1 = i; double d = 0, &r2 = d;
+(a) r2 = 3.14159;
+(b) r2 = r1;
+(c) i = r2;
+(d) r1 = d;
+```
+
+(a) Valid, the value that r2 is referencing to will have the value of 3.14159.  
+(b) Valid, The value that r2 is referencing to will have the value that r1 is referencing to.  
+(c) Valid, i will have the value in which r2 is referencing to.  
+(d) Valid, The value of d will be given to the value that is r1 referencing to. Data will be trunctuated if it's a
+floating-point integer.
+
+## Exercise 2.17: 
+> What does the following code print?
+```c++
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+```
+
+**Answer:** The following code will print: 10 10
