@@ -301,4 +301,83 @@ i = 5; ri = 10;
 std::cout << i << " " << ri << std::endl;
 ```
 
-**Answer:** The following code will print: 10 10
+**Answer:** The following code will print: 10 10.
+
+## Exercise 2.18:
+> Write code to change the value of a pointer. Write code to
+change the value to which the pointer points.  
+[Exercise 2.18.cpp](2.18.cpp)
+
+## Exercise 2.19: 
+> Explain the key differences between pointers and references.
+
+**Answer:** There are some key differences between pointers and references in which
+a pointer is an object which means it has an address in the memory while the reference
+is not an which means it doesnt' have address in the memory. With that, a reference can 
+only be bound to one object while a pointer can be bound to multiple objects in its lifetime.
+Lastly, a reference must be initialized while a pointer can't be initialized right away.
+ 
+
+## Exercise 2.20:
+> What does the following program do?
+```c++
+int i = 42;
+int *p1 = &i;
+*p1 = *p1 * *p1;
+```
+
+**Answer:**
+
+```c++
+int i = 42;       //initialize i to integer data type with a value of 42
+int *p1 = &i;     //give the address of variable i to integer point p1
+*p1 = *p1 * *p1;  //dereference p1 which makes it *p1 = 42 * 42 which makes it 1764
+```
+
+
+
+## Exercise 2.21:
+> Explain each of the following definitions. Indicate whether
+any are illegal and, if so, why.
+```c++
+int i = 0;
+(a) double* dp = &i;
+(b) int *ip = i;
+(c) int *p = &i;
+```
+
+**Answer:**  
+(a) Illegal, a double pointer can only point to a double data type.  
+(b) Illegal, a pointer can't be given an integer value even if it's zero.  
+(c) Legal, since the address of integer i is being given.  
+
+## Exercise 2.22: 
+> Assuming p is a pointer to int, explain the following code:
+```c++
+if (p) // ...
+if (*p) // ...
+```
+
+**Answer:**
+```c++
+if (p) // ...  //if p is pointing to an object it will return true else false
+if (*p) // ... //if p has a value it will return true else false
+```
+
+## Exercise 2.23:
+> Given a pointer p, can you determine whether p points to a
+valid object? If so, how? If not, why not?
+
+**Answer:** Given a pointer, it will be hard to determine whether a pointer is valid or 
+not since if a pointer is invalid the result it will give will be undefined.
+
+## Exercise 2.24: 
+>Why is the initialization of p legal but that of lp illegal?
+```c++
+int i = 42; void *p = &i; long *lp = &i;
+```
+
+**Answer:** The definition of p is legal since the void* data type is a special pointer
+data type that can hold the address of any data type with some limitations as such
+it can't perform operations since data type is not given. Likewise, long and int doesn't 
+match which makes it illegal.
