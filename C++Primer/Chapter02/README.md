@@ -402,3 +402,19 @@ ip = initialized pointer to 0
 **(c)**  
 ip  = uninitialized pointer  
 ip2 = uninitialized integer  
+
+## Exercise 2.26:
+> Which of the following are legal? For those that are illegal,
+explain why.
+```c++
+(a) const int buf;
+(b) int cnt = 0;
+(c) const int sz = cnt;
+(d) ++cnt; ++sz;
+```
+
+**Answer:**  
+**(a)** Illegal, a const must be initialized after creating it.  
+**(b)** Legal  
+**(c)** Legal  
+**(d)** Illegal, the value of const sz cannot be changed once initialized.
