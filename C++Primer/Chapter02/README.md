@@ -381,3 +381,24 @@ int i = 42; void *p = &i; long *lp = &i;
 data type that can hold the address of any data type with some limitations as such
 it can't perform operations since data type is not given. Likewise, long and int doesn't 
 match which makes it illegal.
+
+## Exercise 2.25: 
+>Determine the types and values of each of the following
+variables.
+```c++
+(a) int* ip, i, &r = i;
+(b) int i, *ip = 0;
+(c) int* ip, ip2;
+```
+
+**Answer:**  
+**(a)**   
+ip = unintialized pointer  
+i  = uninitialized integer  
+r  = reference to i  
+**(b)**  
+i  = uninitialized integer  
+ip = initialized pointer to 0  
+**(c)**  
+ip  = uninitialized pointer  
+ip2 = uninitialized integer  
