@@ -418,3 +418,62 @@ explain why.
 **(b)** Legal  
 **(c)** Legal  
 **(d)** Illegal, the value of const sz cannot be changed once initialized.
+
+## Exercise 2.27:
+> Which of the following initializations are legal? Explain why.
+```c++
+(a) int i = -1, &r = 0;
+(b) int *const p2 = &i2;
+(c) const int i = -1, &r = 0; 
+(d) const int *const p3 = &i2;
+(e) const int *p1 = &i2;
+(f) const int &const r2;
+(g) const int i2 = i, &r = i;
+```
+
+**Answer:**  
+**(a)** Illegal initialization of r reference, it must point to an object.  
+**(b)** Legal, the pointer will only point to i2 in its entire lifetime.  
+**(c)** Legal, the compiler will make a temp variable which will be used to initialized r reference.  
+**(d)** Legal, it will initialize a const integer with a const pointer.  
+**(e)** Legal, the pointer will only initialize to a const integer.  
+**(f)** Illegal, a const and a reference must be initialized.  
+**(g)** Legal, a const can be reference to nonconst variables.  
+
+## Exercise 2.28: 
+> Explain the following definitions. Identify any that are illegal.
+```c++
+(a) int i, *const cp;
+(b) int *p1, *const p2;
+(c) const int ic, &r = ic;
+(d) const int *const p3;
+(e) const int *p;
+```
+
+**Answer:**  
+**(a)** Illegal, const must be initialized and definition is invalid.  
+**(b)** Illegal, definition invalid, const uninitialized.  
+**(c)** Illegal, ic uninitialized.  
+**(d)** Illegal, pointer p3 uninitialized.  
+**(e)** Legal, since the pointer is not constant and will only point to const integer.  
+
+## Exercise 2.29:
+> Using the variables in the previous exercise, which of the following 
+assignments are legal? Explain why.
+```c++
+(a) i = ic;
+(b) p1 = p3;
+(c) p1 = &ic;
+(d) p3 = &ic;
+(e) p2 = p1;
+(f) ic = *p3;
+```
+
+**Answer:**
+
+**(a)** Legal, since an integer can have a constant value.  
+**(b)** Illegal, the pointer must be a pointer of const int.  
+**(c)** Illegal, the pointer must be a pointer of const int.  
+**(d)** Illegal, the pointer can't be assigned to any other object once initialized.  
+**(e)** Illegal, the pointer can't be assigned to any other object once initialized.  
+**(f)** Illegal, the integer can't be assigned to any other object once initialized.  
